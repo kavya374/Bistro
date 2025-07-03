@@ -1,0 +1,53 @@
+.full-menu-page {
+  padding: 2rem;
+}
+h1{
+  margin-bottom:1rem;
+  color:#00563B;
+}
+.full-menu-subtext {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.menu-category-section {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: #f9f9f9;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.category-header:hover {
+  background: #efefef;
+  border: 1px solid  #00563B;
+}
+
+.category-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.dropdown-icon {
+  font-size: 1.2rem;
+  color: #00563B;
+}
+.full-menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}

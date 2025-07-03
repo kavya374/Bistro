@@ -1,0 +1,24 @@
+.admin {
+  padding: 1rem;
+}
+
+.admin-layout {
+  display: flex;
+  min-height: 80vh;
+}
+
+/* Sidebar takes 18% width as you've already set */
+.sidebar {
+  width: 18%;
+  min-height: 100vh;
+  border: 1.5px solid #a9a9a9;
+  border-top: 0;
+  font-size: max(1vw, 10px);
+}
+
+/* Main content area */
+.admin-content {
+  width: 82%;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
