@@ -1,42 +1,101 @@
-.add{
+.add {
     width: 70%;
-    margin-left: max(5vw, 25px);
-    margin-top: 50px;
-    color: #6d6d6d;
+    margin: 40px auto;
+    color: #333;
     font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.add form{
-    gap: 20px;
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.add-img-upload img{
+.add-img-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-img-upload img {
     width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: border-color 0.3s;
 }
 
-.add-product-name, .add-product-description{
-    width: max(40%,280px);
+.add-img-upload img:hover {
+    border-color: #333;
 }
 
-.add-product-name input , .add-product-description textarea{
+.add-img-upload input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.add-product-name, .add-product-description {
+    width: 100%;
+}
+
+.add-product-name input, .add-product-description textarea {
+    width: 100%;
     padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
 }
 
-.add-category-price{
+.add-product-name input:focus, .add-product-description textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.add-category-price {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
-.add-category-price select, .add-category-price input{
-    max-width: 120px ;
+.add-category-price select, .add-category-price input {
+    width: 100%;
+    max-width: 120px;
     padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
 }
 
-.add-btn{
+.add-category-price select:focus, .add-category-price input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.add-btn {
+    width: 100%;
     max-width: 120px;
     border: none;
     padding: 10px;
-    background-color: black;
+    background-color: #333;
     color: white;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #555;
 }

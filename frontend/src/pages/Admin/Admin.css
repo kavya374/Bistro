@@ -1,24 +1,43 @@
-.admin {
-  padding: 1rem;
-}
-
-.admin-layout {
+.admin-navbar {
   display: flex;
-  min-height: 80vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: #00563B;;
 }
 
-/* Sidebar takes 18% width as you've already set */
-.sidebar {
-  width: 18%;
-  min-height: 100vh;
-  border: 1.5px solid #a9a9a9;
-  border-top: 0;
-  font-size: max(1vw, 10px);
+.admin-navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-/* Main content area */
-.admin-content {
-  width: 82%;
-  padding: 2rem;
-  background-color: #f9f9f9;
+.admin-navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  font-size:20px;
+}
+
+.admin-navbar .nav-links a {
+  color: #00563B;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.admin-navbar .nav-links a.active {
+  border-bottom: 2px solid #00563B;
+}
+
+.logout-btn {
+  background-color: #00563B;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:18px;
+}
+
+.logout-btn:hover {
+  background-color: tomato;
 }
