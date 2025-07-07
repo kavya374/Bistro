@@ -15,7 +15,14 @@ const port = 4000
 
 // middleware
 app.use(express.json())
-app.use(cors())
+//ye tha before: app.use(cors())
+const allowedOrigin = process.env.CLIENT_URL || "http://localhost:5173";
+
+app.use(cors({
+  origin: allowedOrigin,
+  credentials: true,
+}));
+
 
 //db connection
 connectDB();
