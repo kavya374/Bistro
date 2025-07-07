@@ -10,9 +10,10 @@ const AdminLogin = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+const url = import.meta.env.VITE_BACKEND_URL;
 
     try {
-      const response = await axios.post("http://localhost:4000/api/admin/login", {
+      const response = await axios.post(`${url}/api/admin/login`, {
         email,
         password,
       });
